@@ -74,40 +74,17 @@ async def genshin(ctx):
         icon_url='https://static.wikia.nocookie.net/gensin-impact/images/8/80/Genshin_Impact.png/revision/latest?cb=20230121174225'
     )
     await ctx.send(embed=embed)
-@bot.command()
-async def bday(ctx):
-    await ctx.send('Happy Birthday')
-
-
-@bot.command()
-async def birthday(ctx):
-    await ctx.send(
-        'Contained Personal info for personal use so changed.')
-
-
-@bot.command()
-async def mere(ctx):
-    await ctx.send('''He is my creator''')
-
 
 @bot.command()
 async def command(ctx):
-    await ctx.send('''!bday - birthday wishes
-!birthday - best birthday wishes
-!mere - info about mere
+    await ctx.send('''!
+
 !genshin - check when your resin will cap.(Only use after using !sresin)
 !sresin - Input how much resin you currently have''')
-
-
-@bot.command()
-async def explosion(ctx):
-    await ctx.send('Personal use information so i changed it')
-
 
 @bot.event
 async def on_ready():
     print(f'{bot.user} is operational')
-
 
 def run_discord_bot():
     bot.run(T().TOKEN1())
